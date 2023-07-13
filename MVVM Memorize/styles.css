@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecbdbd;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+  font-size: 32px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard {
+  background-color: brown;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 500px;
+  top: 50%;
+  text-align: left;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.buttons {
+  top: 50%;
+}
